@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05313EC9-DB26-46E9-AE9B-BE79A8D346B4}</ProjectGuid>
+    <ProjectGuid>{11BC0224-6D6C-48B7-808C-A2F531D4AF96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Renda.Tela</RootNamespace>
     <AssemblyName>Renda.Tela</AssemblyName>
@@ -45,14 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +77,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Renda.Infraestrutura\Renda.Infraestrutura.csproj">
+      <Project>{e981e0a8-c3dd-465e-b735-3291b531e3f5}</Project>
+      <Name>Renda.Infraestrutura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renda.Servico\Renda.Servico.csproj">
+      <Project>{0f918a20-cdc2-4f1c-b80f-8a1e18e07ffd}</Project>
+      <Name>Renda.Servico</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

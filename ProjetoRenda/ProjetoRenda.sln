@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda.Tela", "Renda.Tela\Renda.Tela.csproj", "{05313EC9-DB26-46E9-AE9B-BE79A8D346B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda.Negocio", "Renda.Negocio\Renda.Negocio.csproj", "{F8631840-8B3A-48D6-95D3-1B47460F6C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda.Repositorio", "Renda.Repositorio\Renda.Repositorio.csproj", "{7CB9F1C3-69B0-4867-8014-C0B8C073E8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda.Infraestrutura", "Renda.Infraestrutura\Renda.Infraestrutura.csproj", "{E981E0A8-C3DD-465E-B735-3291B531E3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda.Servico", "Renda.Servico\Renda.Servico.csproj", "{0F918A20-CDC2-4F1C-B80F-8A1E18E07FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda.Tela", "Renda.Tela\Renda.Tela.csproj", "{11BC0224-6D6C-48B7-808C-A2F531D4AF96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{05313EC9-DB26-46E9-AE9B-BE79A8D346B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05313EC9-DB26-46E9-AE9B-BE79A8D346B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05313EC9-DB26-46E9-AE9B-BE79A8D346B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05313EC9-DB26-46E9-AE9B-BE79A8D346B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8631840-8B3A-48D6-95D3-1B47460F6C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8631840-8B3A-48D6-95D3-1B47460F6C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8631840-8B3A-48D6-95D3-1B47460F6C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8631840-8B3A-48D6-95D3-1B47460F6C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB9F1C3-69B0-4867-8014-C0B8C073E8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB9F1C3-69B0-4867-8014-C0B8C073E8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB9F1C3-69B0-4867-8014-C0B8C073E8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB9F1C3-69B0-4867-8014-C0B8C073E8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E981E0A8-C3DD-465E-B735-3291B531E3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E981E0A8-C3DD-465E-B735-3291B531E3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E981E0A8-C3DD-465E-B735-3291B531E3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E981E0A8-C3DD-465E-B735-3291B531E3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F918A20-CDC2-4F1C-B80F-8A1E18E07FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F918A20-CDC2-4F1C-B80F-8A1E18E07FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F918A20-CDC2-4F1C-B80F-8A1E18E07FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F918A20-CDC2-4F1C-B80F-8A1E18E07FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BC0224-6D6C-48B7-808C-A2F531D4AF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BC0224-6D6C-48B7-808C-A2F531D4AF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BC0224-6D6C-48B7-808C-A2F531D4AF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BC0224-6D6C-48B7-808C-A2F531D4AF96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

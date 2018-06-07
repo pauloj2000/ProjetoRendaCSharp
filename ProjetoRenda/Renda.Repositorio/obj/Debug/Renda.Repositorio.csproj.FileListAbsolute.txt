@@ -1,0 +1,11 @@
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\bin\Debug\Renda.Repositorio.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\bin\Debug\Renda.Repositorio.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\bin\Debug\Renda.Infraestrutura.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\bin\Debug\Renda.Negocio.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\bin\Debug\Renda.Infraestrutura.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\bin\Debug\Renda.Negocio.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\obj\Debug\Renda.Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\obj\Debug\Renda.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\obj\Debug\Renda.Repositorio.csproj.CopyComplete
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\obj\Debug\Renda.Repositorio.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Repositorio\obj\Debug\Renda.Repositorio.pdb

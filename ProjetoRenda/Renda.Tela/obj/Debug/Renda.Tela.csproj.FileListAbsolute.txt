@@ -1,0 +1,14 @@
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Tela.exe.config
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Tela.exe
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Tela.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Infraestrutura.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Servico.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Infraestrutura.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Servico.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.csprojResolveAssemblyReference.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.Properties.Resources.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.csproj.GenerateResource.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.csproj.CoreCompileInputs.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.csproj.CopyComplete
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.exe
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.pdb
