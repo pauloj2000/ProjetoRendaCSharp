@@ -29,31 +29,28 @@
         private void InitializeComponent()
         {
             this.groupBoxRenda = new System.Windows.Forms.GroupBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblSalarioBruto = new System.Windows.Forms.Label();
-            this.lblSalarioLiquido = new System.Windows.Forms.Label();
-            this.lblDividas = new System.Windows.Forms.Label();
-            this.lblPoupancaMensal = new System.Windows.Forms.Label();
-            this.lblRendaLivre = new System.Windows.Forms.Label();
-            this.txtSalarioLiq = new System.Windows.Forms.TextBox();
-            this.txtSalarioBruto = new System.Windows.Forms.TextBox();
-            this.txtDividas = new System.Windows.Forms.TextBox();
-            this.txtPoupanca = new System.Windows.Forms.TextBox();
+            this.txtMesRef = new System.Windows.Forms.TextBox();
+            this.lblMesRef = new System.Windows.Forms.Label();
             this.txtRendaLivre = new System.Windows.Forms.TextBox();
+            this.txtPoupanca = new System.Windows.Forms.TextBox();
+            this.txtDividas = new System.Windows.Forms.TextBox();
+            this.txtSalarioLiq = new System.Windows.Forms.TextBox();
+            this.lblRendaLivre = new System.Windows.Forms.Label();
+            this.lblPoupancaMensal = new System.Windows.Forms.Label();
+            this.lblDividas = new System.Windows.Forms.Label();
+            this.lblSalarioLiquido = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.groupBoxConfig = new System.Windows.Forms.GroupBox();
-            this.groupBoxRelatorios = new System.Windows.Forms.GroupBox();
-            this.btnImpostos = new System.Windows.Forms.Button();
-            this.btnDividas = new System.Windows.Forms.Button();
-            this.btnGanhoMensal = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
+            this.btnGanhoMensal = new System.Windows.Forms.Button();
+            this.btnDividas = new System.Windows.Forms.Button();
+            this.groupBoxRelatorios = new System.Windows.Forms.GroupBox();
+            this.btnHistorico = new System.Windows.Forms.Button();
             this.btnPoupanca = new System.Windows.Forms.Button();
             this.groupBoxFuncoes = new System.Windows.Forms.GroupBox();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnHistorico = new System.Windows.Forms.Button();
-            this.lblMesRef = new System.Windows.Forms.Label();
-            this.txtMesRef = new System.Windows.Forms.TextBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.groupBoxRenda.SuspendLayout();
             this.groupBoxConfig.SuspendLayout();
             this.groupBoxRelatorios.SuspendLayout();
@@ -67,27 +64,103 @@
             this.groupBoxRenda.Controls.Add(this.txtRendaLivre);
             this.groupBoxRenda.Controls.Add(this.txtPoupanca);
             this.groupBoxRenda.Controls.Add(this.txtDividas);
-            this.groupBoxRenda.Controls.Add(this.txtSalarioBruto);
             this.groupBoxRenda.Controls.Add(this.txtSalarioLiq);
             this.groupBoxRenda.Controls.Add(this.lblRendaLivre);
             this.groupBoxRenda.Controls.Add(this.lblPoupancaMensal);
             this.groupBoxRenda.Controls.Add(this.lblDividas);
             this.groupBoxRenda.Controls.Add(this.lblSalarioLiquido);
-            this.groupBoxRenda.Controls.Add(this.lblSalarioBruto);
             this.groupBoxRenda.Controls.Add(this.lblNome);
             this.groupBoxRenda.Controls.Add(this.txtNome);
             this.groupBoxRenda.Location = new System.Drawing.Point(4, 0);
             this.groupBoxRenda.Name = "groupBoxRenda";
-            this.groupBoxRenda.Size = new System.Drawing.Size(261, 316);
+            this.groupBoxRenda.Size = new System.Drawing.Size(261, 285);
             this.groupBoxRenda.TabIndex = 0;
             this.groupBoxRenda.TabStop = false;
             // 
-            // txtNome
+            // txtMesRef
             // 
-            this.txtNome.Location = new System.Drawing.Point(115, 16);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(135, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtMesRef.Location = new System.Drawing.Point(115, 42);
+            this.txtMesRef.Name = "txtMesRef";
+            this.txtMesRef.Size = new System.Drawing.Size(135, 20);
+            this.txtMesRef.TabIndex = 14;
+            // 
+            // lblMesRef
+            // 
+            this.lblMesRef.AutoSize = true;
+            this.lblMesRef.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblMesRef.Location = new System.Drawing.Point(6, 43);
+            this.lblMesRef.Name = "lblMesRef";
+            this.lblMesRef.Size = new System.Drawing.Size(89, 15);
+            this.lblMesRef.TabIndex = 13;
+            this.lblMesRef.Text = "Mês referência";
+            // 
+            // txtRendaLivre
+            // 
+            this.txtRendaLivre.Location = new System.Drawing.Point(115, 174);
+            this.txtRendaLivre.Name = "txtRendaLivre";
+            this.txtRendaLivre.Size = new System.Drawing.Size(135, 20);
+            this.txtRendaLivre.TabIndex = 12;
+            // 
+            // txtPoupanca
+            // 
+            this.txtPoupanca.Location = new System.Drawing.Point(115, 145);
+            this.txtPoupanca.Name = "txtPoupanca";
+            this.txtPoupanca.Size = new System.Drawing.Size(135, 20);
+            this.txtPoupanca.TabIndex = 11;
+            // 
+            // txtDividas
+            // 
+            this.txtDividas.Location = new System.Drawing.Point(115, 117);
+            this.txtDividas.Name = "txtDividas";
+            this.txtDividas.Size = new System.Drawing.Size(135, 20);
+            this.txtDividas.TabIndex = 10;
+            // 
+            // txtSalarioLiq
+            // 
+            this.txtSalarioLiq.Location = new System.Drawing.Point(115, 79);
+            this.txtSalarioLiq.Name = "txtSalarioLiq";
+            this.txtSalarioLiq.Size = new System.Drawing.Size(135, 20);
+            this.txtSalarioLiq.TabIndex = 8;
+            // 
+            // lblRendaLivre
+            // 
+            this.lblRendaLivre.AutoSize = true;
+            this.lblRendaLivre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblRendaLivre.Location = new System.Drawing.Point(6, 174);
+            this.lblRendaLivre.Name = "lblRendaLivre";
+            this.lblRendaLivre.Size = new System.Drawing.Size(69, 15);
+            this.lblRendaLivre.TabIndex = 7;
+            this.lblRendaLivre.Text = "Renda livre";
+            // 
+            // lblPoupancaMensal
+            // 
+            this.lblPoupancaMensal.AutoSize = true;
+            this.lblPoupancaMensal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblPoupancaMensal.Location = new System.Drawing.Point(6, 146);
+            this.lblPoupancaMensal.Name = "lblPoupancaMensal";
+            this.lblPoupancaMensal.Size = new System.Drawing.Size(107, 15);
+            this.lblPoupancaMensal.TabIndex = 6;
+            this.lblPoupancaMensal.Text = "Poupança mensal";
+            // 
+            // lblDividas
+            // 
+            this.lblDividas.AutoSize = true;
+            this.lblDividas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblDividas.Location = new System.Drawing.Point(6, 118);
+            this.lblDividas.Name = "lblDividas";
+            this.lblDividas.Size = new System.Drawing.Size(47, 15);
+            this.lblDividas.TabIndex = 5;
+            this.lblDividas.Text = "Dívidas";
+            // 
+            // lblSalarioLiquido
+            // 
+            this.lblSalarioLiquido.AutoSize = true;
+            this.lblSalarioLiquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSalarioLiquido.Location = new System.Drawing.Point(6, 80);
+            this.lblSalarioLiquido.Name = "lblSalarioLiquido";
+            this.lblSalarioLiquido.Size = new System.Drawing.Size(86, 15);
+            this.lblSalarioLiquido.TabIndex = 4;
+            this.lblSalarioLiquido.Text = "Salário líquido";
             // 
             // lblNome
             // 
@@ -99,132 +172,33 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome";
             // 
-            // lblSalarioBruto
+            // txtNome
             // 
-            this.lblSalarioBruto.AutoSize = true;
-            this.lblSalarioBruto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblSalarioBruto.Location = new System.Drawing.Point(6, 83);
-            this.lblSalarioBruto.Name = "lblSalarioBruto";
-            this.lblSalarioBruto.Size = new System.Drawing.Size(77, 15);
-            this.lblSalarioBruto.TabIndex = 3;
-            this.lblSalarioBruto.Text = "Salário bruto";
-            // 
-            // lblSalarioLiquido
-            // 
-            this.lblSalarioLiquido.AutoSize = true;
-            this.lblSalarioLiquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblSalarioLiquido.Location = new System.Drawing.Point(6, 109);
-            this.lblSalarioLiquido.Name = "lblSalarioLiquido";
-            this.lblSalarioLiquido.Size = new System.Drawing.Size(86, 15);
-            this.lblSalarioLiquido.TabIndex = 4;
-            this.lblSalarioLiquido.Text = "Salário líquido";
-            // 
-            // lblDividas
-            // 
-            this.lblDividas.AutoSize = true;
-            this.lblDividas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblDividas.Location = new System.Drawing.Point(6, 148);
-            this.lblDividas.Name = "lblDividas";
-            this.lblDividas.Size = new System.Drawing.Size(47, 15);
-            this.lblDividas.TabIndex = 5;
-            this.lblDividas.Text = "Dívidas";
-            // 
-            // lblPoupancaMensal
-            // 
-            this.lblPoupancaMensal.AutoSize = true;
-            this.lblPoupancaMensal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblPoupancaMensal.Location = new System.Drawing.Point(6, 188);
-            this.lblPoupancaMensal.Name = "lblPoupancaMensal";
-            this.lblPoupancaMensal.Size = new System.Drawing.Size(107, 15);
-            this.lblPoupancaMensal.TabIndex = 6;
-            this.lblPoupancaMensal.Text = "Poupança mensal";
-            // 
-            // lblRendaLivre
-            // 
-            this.lblRendaLivre.AutoSize = true;
-            this.lblRendaLivre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblRendaLivre.Location = new System.Drawing.Point(6, 214);
-            this.lblRendaLivre.Name = "lblRendaLivre";
-            this.lblRendaLivre.Size = new System.Drawing.Size(69, 15);
-            this.lblRendaLivre.TabIndex = 7;
-            this.lblRendaLivre.Text = "Renda livre";
-            // 
-            // txtSalarioLiq
-            // 
-            this.txtSalarioLiq.Location = new System.Drawing.Point(115, 108);
-            this.txtSalarioLiq.Name = "txtSalarioLiq";
-            this.txtSalarioLiq.Size = new System.Drawing.Size(135, 20);
-            this.txtSalarioLiq.TabIndex = 8;
-            // 
-            // txtSalarioBruto
-            // 
-            this.txtSalarioBruto.Location = new System.Drawing.Point(115, 82);
-            this.txtSalarioBruto.Name = "txtSalarioBruto";
-            this.txtSalarioBruto.Size = new System.Drawing.Size(135, 20);
-            this.txtSalarioBruto.TabIndex = 9;
-            // 
-            // txtDividas
-            // 
-            this.txtDividas.Location = new System.Drawing.Point(115, 147);
-            this.txtDividas.Name = "txtDividas";
-            this.txtDividas.Size = new System.Drawing.Size(135, 20);
-            this.txtDividas.TabIndex = 10;
-            // 
-            // txtPoupanca
-            // 
-            this.txtPoupanca.Location = new System.Drawing.Point(115, 183);
-            this.txtPoupanca.Name = "txtPoupanca";
-            this.txtPoupanca.Size = new System.Drawing.Size(135, 20);
-            this.txtPoupanca.TabIndex = 11;
-            // 
-            // txtRendaLivre
-            // 
-            this.txtRendaLivre.Location = new System.Drawing.Point(115, 213);
-            this.txtRendaLivre.Name = "txtRendaLivre";
-            this.txtRendaLivre.Size = new System.Drawing.Size(135, 20);
-            this.txtRendaLivre.TabIndex = 12;
+            this.txtNome.Location = new System.Drawing.Point(115, 16);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(135, 20);
+            this.txtNome.TabIndex = 1;
             // 
             // groupBoxConfig
             // 
             this.groupBoxConfig.Controls.Add(this.btnUsuario);
             this.groupBoxConfig.Controls.Add(this.btnGanhoMensal);
             this.groupBoxConfig.Controls.Add(this.btnDividas);
-            this.groupBoxConfig.Controls.Add(this.btnImpostos);
             this.groupBoxConfig.Location = new System.Drawing.Point(271, 0);
             this.groupBoxConfig.Name = "groupBoxConfig";
-            this.groupBoxConfig.Size = new System.Drawing.Size(171, 143);
+            this.groupBoxConfig.Size = new System.Drawing.Size(171, 112);
             this.groupBoxConfig.TabIndex = 1;
             this.groupBoxConfig.TabStop = false;
             this.groupBoxConfig.Text = "Configurações";
             // 
-            // groupBoxRelatorios
+            // btnUsuario
             // 
-            this.groupBoxRelatorios.Controls.Add(this.btnHistorico);
-            this.groupBoxRelatorios.Controls.Add(this.btnPoupanca);
-            this.groupBoxRelatorios.Location = new System.Drawing.Point(271, 149);
-            this.groupBoxRelatorios.Name = "groupBoxRelatorios";
-            this.groupBoxRelatorios.Size = new System.Drawing.Size(171, 84);
-            this.groupBoxRelatorios.TabIndex = 2;
-            this.groupBoxRelatorios.TabStop = false;
-            this.groupBoxRelatorios.Text = "Relatórios";
-            // 
-            // btnImpostos
-            // 
-            this.btnImpostos.Location = new System.Drawing.Point(6, 77);
-            this.btnImpostos.Name = "btnImpostos";
-            this.btnImpostos.Size = new System.Drawing.Size(158, 23);
-            this.btnImpostos.TabIndex = 0;
-            this.btnImpostos.Text = "Impostos";
-            this.btnImpostos.UseVisualStyleBackColor = true;
-            // 
-            // btnDividas
-            // 
-            this.btnDividas.Location = new System.Drawing.Point(7, 106);
-            this.btnDividas.Name = "btnDividas";
-            this.btnDividas.Size = new System.Drawing.Size(158, 23);
-            this.btnDividas.TabIndex = 1;
-            this.btnDividas.Text = "Dívidas";
-            this.btnDividas.UseVisualStyleBackColor = true;
+            this.btnUsuario.Location = new System.Drawing.Point(7, 19);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(158, 23);
+            this.btnUsuario.TabIndex = 3;
+            this.btnUsuario.Text = "Usuário";
+            this.btnUsuario.UseVisualStyleBackColor = true;
             // 
             // btnGanhoMensal
             // 
@@ -235,14 +209,34 @@
             this.btnGanhoMensal.Text = "Renda mensal";
             this.btnGanhoMensal.UseVisualStyleBackColor = true;
             // 
-            // btnUsuario
+            // btnDividas
             // 
-            this.btnUsuario.Location = new System.Drawing.Point(7, 19);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(158, 23);
-            this.btnUsuario.TabIndex = 3;
-            this.btnUsuario.Text = "Usuário";
-            this.btnUsuario.UseVisualStyleBackColor = true;
+            this.btnDividas.Location = new System.Drawing.Point(5, 77);
+            this.btnDividas.Name = "btnDividas";
+            this.btnDividas.Size = new System.Drawing.Size(158, 23);
+            this.btnDividas.TabIndex = 1;
+            this.btnDividas.Text = "Dívidas";
+            this.btnDividas.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxRelatorios
+            // 
+            this.groupBoxRelatorios.Controls.Add(this.btnHistorico);
+            this.groupBoxRelatorios.Controls.Add(this.btnPoupanca);
+            this.groupBoxRelatorios.Location = new System.Drawing.Point(271, 118);
+            this.groupBoxRelatorios.Name = "groupBoxRelatorios";
+            this.groupBoxRelatorios.Size = new System.Drawing.Size(171, 84);
+            this.groupBoxRelatorios.TabIndex = 2;
+            this.groupBoxRelatorios.TabStop = false;
+            this.groupBoxRelatorios.Text = "Relatórios";
+            // 
+            // btnHistorico
+            // 
+            this.btnHistorico.Location = new System.Drawing.Point(6, 48);
+            this.btnHistorico.Name = "btnHistorico";
+            this.btnHistorico.Size = new System.Drawing.Size(157, 23);
+            this.btnHistorico.TabIndex = 1;
+            this.btnHistorico.Text = "Histórico";
+            this.btnHistorico.UseVisualStyleBackColor = true;
             // 
             // btnPoupanca
             // 
@@ -257,21 +251,12 @@
             // 
             this.groupBoxFuncoes.Controls.Add(this.btnExcluir);
             this.groupBoxFuncoes.Controls.Add(this.btnSalvar);
-            this.groupBoxFuncoes.Location = new System.Drawing.Point(271, 239);
+            this.groupBoxFuncoes.Location = new System.Drawing.Point(271, 208);
             this.groupBoxFuncoes.Name = "groupBoxFuncoes";
             this.groupBoxFuncoes.Size = new System.Drawing.Size(171, 77);
             this.groupBoxFuncoes.TabIndex = 3;
             this.groupBoxFuncoes.TabStop = false;
             this.groupBoxFuncoes.Text = "Ações";
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Location = new System.Drawing.Point(7, 19);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(157, 23);
-            this.btnSalvar.TabIndex = 0;
-            this.btnSalvar.Text = "Salvar mês atual...";
-            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // btnExcluir
             // 
@@ -282,37 +267,20 @@
             this.btnExcluir.Text = "Excluir mês atual...";
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // btnHistorico
+            // btnSalvar
             // 
-            this.btnHistorico.Location = new System.Drawing.Point(6, 48);
-            this.btnHistorico.Name = "btnHistorico";
-            this.btnHistorico.Size = new System.Drawing.Size(157, 23);
-            this.btnHistorico.TabIndex = 1;
-            this.btnHistorico.Text = "Histórico";
-            this.btnHistorico.UseVisualStyleBackColor = true;
-            // 
-            // lblMesRef
-            // 
-            this.lblMesRef.AutoSize = true;
-            this.lblMesRef.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblMesRef.Location = new System.Drawing.Point(6, 43);
-            this.lblMesRef.Name = "lblMesRef";
-            this.lblMesRef.Size = new System.Drawing.Size(89, 15);
-            this.lblMesRef.TabIndex = 13;
-            this.lblMesRef.Text = "Mês referência";
-            // 
-            // txtMesRef
-            // 
-            this.txtMesRef.Location = new System.Drawing.Point(115, 42);
-            this.txtMesRef.Name = "txtMesRef";
-            this.txtMesRef.Size = new System.Drawing.Size(135, 20);
-            this.txtMesRef.TabIndex = 14;
+            this.btnSalvar.Location = new System.Drawing.Point(7, 19);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(157, 23);
+            this.btnSalvar.TabIndex = 0;
+            this.btnSalvar.Text = "Salvar mês atual...";
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 320);
+            this.ClientSize = new System.Drawing.Size(447, 289);
             this.Controls.Add(this.groupBoxFuncoes);
             this.Controls.Add(this.groupBoxRelatorios);
             this.Controls.Add(this.groupBoxConfig);
@@ -334,13 +302,11 @@
         private System.Windows.Forms.TextBox txtRendaLivre;
         private System.Windows.Forms.TextBox txtPoupanca;
         private System.Windows.Forms.TextBox txtDividas;
-        private System.Windows.Forms.TextBox txtSalarioBruto;
         private System.Windows.Forms.TextBox txtSalarioLiq;
         private System.Windows.Forms.Label lblRendaLivre;
         private System.Windows.Forms.Label lblPoupancaMensal;
         private System.Windows.Forms.Label lblDividas;
         private System.Windows.Forms.Label lblSalarioLiquido;
-        private System.Windows.Forms.Label lblSalarioBruto;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.GroupBox groupBoxConfig;
@@ -349,7 +315,6 @@
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button btnGanhoMensal;
         private System.Windows.Forms.Button btnDividas;
-        private System.Windows.Forms.Button btnImpostos;
         private System.Windows.Forms.GroupBox groupBoxRelatorios;
         private System.Windows.Forms.Button btnHistorico;
         private System.Windows.Forms.Button btnPoupanca;
