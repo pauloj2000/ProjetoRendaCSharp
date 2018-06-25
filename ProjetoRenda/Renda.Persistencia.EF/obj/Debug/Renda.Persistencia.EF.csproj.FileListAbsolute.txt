@@ -1,0 +1,4 @@
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.EF\obj\Debug\Renda.Persistencia.EF.csprojResolveAssemblyReference.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.EF\obj\Debug\Renda.Persistencia.EF.Properties.Resources.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.EF\obj\Debug\Renda.Persistencia.EF.csproj.GenerateResource.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.EF\obj\Debug\Renda.Persistencia.EF.csproj.CoreCompileInputs.cache

@@ -12,3 +12,10 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Re
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.csproj.CopyComplete
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.exe
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmCadastrar.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmDividas.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmLogin.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.FrmPrincipal.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmRendaMensal.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmSenha.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmUsuario.resources
