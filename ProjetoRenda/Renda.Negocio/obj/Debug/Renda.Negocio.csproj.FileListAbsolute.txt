@@ -3,3 +3,7 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\bin\Debug
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\obj\Debug\Renda.Negocio.csproj.CoreCompileInputs.cache
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\obj\Debug\Renda.Negocio.dll
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\obj\Debug\Renda.Negocio.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\bin\Debug\Renda.Infraestrutura.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\bin\Debug\Renda.Infraestrutura.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\obj\Debug\Renda.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Negocio\obj\Debug\Renda.Negocio.csproj.CopyComplete

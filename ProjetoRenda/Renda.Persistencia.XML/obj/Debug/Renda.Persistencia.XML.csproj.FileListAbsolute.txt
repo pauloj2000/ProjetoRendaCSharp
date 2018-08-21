@@ -1,0 +1,11 @@
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\bin\Debug\Renda.Persistencia.XML.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\bin\Debug\Renda.Persistencia.XML.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\bin\Debug\Renda.Infraestrutura.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\bin\Debug\Renda.Negocio.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\bin\Debug\Renda.Infraestrutura.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\bin\Debug\Renda.Negocio.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\obj\Debug\Renda.Persistencia.XML.csprojResolveAssemblyReference.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\obj\Debug\Renda.Persistencia.XML.csproj.CoreCompileInputs.cache
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\obj\Debug\Renda.Persistencia.XML.csproj.CopyComplete
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\obj\Debug\Renda.Persistencia.XML.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Persistencia.XML\obj\Debug\Renda.Persistencia.XML.pdb

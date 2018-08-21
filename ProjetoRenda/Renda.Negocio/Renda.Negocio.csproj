@@ -45,6 +45,11 @@
     <Compile Include="Dominio\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Renda.Infraestrutura\Renda.Infraestrutura.csproj">
+      <Project>{e981e0a8-c3dd-465e-b735-3291b531e3f5}</Project>
+      <Name>Renda.Infraestrutura</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

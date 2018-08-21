@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Renda.Repositorio.Contratos
+namespace Renda.Infraestrutura.Contratos
 {
-    public interface IRepositorio
+    public interface IRepositorio : IDisposable
     {
-
-
     }
 }

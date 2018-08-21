@@ -12,6 +12,5 @@ namespace Renda.Persistencia.EF
     {
         public DbSet<Usuario> Usuarios { get; set; }
 
-
     }
 }
