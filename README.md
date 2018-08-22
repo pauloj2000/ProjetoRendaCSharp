@@ -13,10 +13,10 @@ e suas dívidas, e, também faz o controle de acesso, para segurança das inform
 
 ## Tecnologia
 
-Linguagem  - C# 
-Plataforma - Visual Studio 2017 
-Framework  - .NET Framework 4.7.1
-Interface  - Windows Forms
+Linguagem  - C# <br>
+Plataforma - Visual Studio 2017 <br>
+Framework  - .NET Framework 4.7.1 <br>
+Interface  - Windows Forms <br>
 
 
 
