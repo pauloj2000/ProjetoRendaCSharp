@@ -1,2 +1,24 @@
-# ProjetoRendaCSharp
+# Controle de Renda 
+
 Este projeto, é um currículo virtual para explicitar meus conhecimentos adquiridos em C#. Seja bem-vindo.
+
+## Produto
+
+O produto em questão, realiza o controle simples da renda mensal do usuário, controlando seu ganho mensal,
+e suas dívidas, e, também faz o controle de acesso, para segurança das informações.
+
+## Conhecimentos aplicados
+
+{ MISSING }
+
+## Tecnologia
+
+Linguagem  - C# 
+Plataforma - Visual Studio 2017 
+Framework  - .NET Framework 4.7.1
+Interface  - Windows Forms
+
+
+
+
+
