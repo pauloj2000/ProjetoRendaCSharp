@@ -4,8 +4,8 @@ Este projeto, é um currículo virtual para explicitar meus conhecimentos adquir
 
 ## Produto
 
-O produto em questão, realiza o controle simples da renda mensal do usuário, controlando seu ganho mensal,
-e suas dívidas, e, também faz o controle de acesso, para segurança das informações.
+O produto em questão, realiza o controle simples da renda mensal do usuário, controlando seu ganho mensal
+e suas dívidas, o produto oferece também controle de acesso, para segurança das informações.
 
 ## Conhecimentos aplicados
 
