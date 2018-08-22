@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Renda.Infraestrutura.Contratos
 {
-    public interface IPersistencia<T>
+    public interface IPersistencia<T> : IDisposable
     {
         void Inserir(T item);
 
@@ -17,8 +17,6 @@ namespace Renda.Infraestrutura.Contratos
         Boolean ExisteComMesmoId(int id);
 
         T ObtenhaPorId(int id);
-
-        void Carregar();
 
         List<T> ObtenhaDados();
     }

@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Divida.cs" />
-    <Compile Include="Dominio\Renda.cs" />
-    <Compile Include="Dominio\Usuario.cs" />
+    <Compile Include="Dominio\DividaObj.cs" />
+    <Compile Include="Dominio\RendaObj.cs" />
+    <Compile Include="Dominio\UsuarioObj.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

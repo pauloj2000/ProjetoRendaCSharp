@@ -3,36 +3,33 @@ using Renda.Negocio.Dominio;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace Renda.Persistencia.XML
 {
-    public class UsuarioXML : IPersistencia<Usuario>
+    public class UsuarioXML : IPersistencia<UsuarioObj>
     {
         public UsuarioXML()
         {
-            _listaUsuarios = new List<Usuario>();
+            _listaUsuarios = new List<UsuarioObj>();
             Carregar();
         }
 
-        public List<Usuario> ObtenhaDados()
+        public List<UsuarioObj> ObtenhaDados()
         {
             return _listaUsuarios;
         }
 
-        private List<Usuario> _listaUsuarios;
+        private List<UsuarioObj> _listaUsuarios;
 
-        public void Carregar()
+        private void Carregar()
         {
-            XmlSerializer ser = new XmlSerializer(typeof(List<Usuario>));
+            XmlSerializer ser = new XmlSerializer(typeof(List<UsuarioObj>));
             FileStream fs = new FileStream("D://Usuarios.xml", FileMode.OpenOrCreate);
 
             try
             {
-                _listaUsuarios = ser.Deserialize(fs) as List<Usuario>;
+                _listaUsuarios = ser.Deserialize(fs) as List<UsuarioObj>;
             }
             catch (InvalidOperationException ex)
             {
@@ -44,7 +41,7 @@ namespace Renda.Persistencia.XML
             }
         }
 
-        public void Inserir(Usuario usuario)
+        public void Inserir(UsuarioObj usuario)
         {
             _listaUsuarios.Add(usuario);
 
@@ -52,9 +49,9 @@ namespace Renda.Persistencia.XML
 
         public Boolean ExisteComMesmoId(int id)
         {
-            foreach (Usuario user in _listaUsuarios)
+            foreach (UsuarioObj usuario in _listaUsuarios)
             {
-                if (user.Id == id)
+                if (usuario.Id == id)
                 {
                     return true;
                 }
@@ -63,7 +60,7 @@ namespace Renda.Persistencia.XML
             return false;
         }
 
-        public void Atualizar(Usuario usuario)
+        public void Atualizar(UsuarioObj usuario)
         {
             Remover(usuario.Id);
             Inserir(usuario);
@@ -74,17 +71,23 @@ namespace Renda.Persistencia.XML
             _listaUsuarios.Remove(ObtenhaPorId(id));
         }
 
-        public Usuario ObtenhaPorId(int id)
+        public UsuarioObj ObtenhaPorId(int id)
         {
-            foreach (Usuario user in _listaUsuarios)
+            foreach (UsuarioObj usuario in _listaUsuarios)
             {
-                if (user.Id == id)
+                if (usuario.Id == id)
                 {
-                    return user;
+                    return usuario;
                 }
             }
 
             return null;
+        }
+
+        public void Dispose()
+        {
+            Carregar();
+            _listaUsuarios = null;
         }
     }
 }

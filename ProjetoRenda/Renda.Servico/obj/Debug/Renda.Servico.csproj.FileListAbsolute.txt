@@ -11,3 +11,5 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\obj\Debug
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\obj\Debug\Renda.Servico.csproj.CopyComplete
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\obj\Debug\Renda.Servico.dll
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\obj\Debug\Renda.Servico.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\Renda.Persistencia.XML.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\Renda.Persistencia.XML.pdb
