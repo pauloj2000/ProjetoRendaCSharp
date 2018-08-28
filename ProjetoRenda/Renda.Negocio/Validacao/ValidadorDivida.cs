@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Renda.Servico.Contratos
+namespace Renda.Negocio.Validacao
 {
-    public interface IServicoDeUsuarios : IDisposable
+    public class ValidadorDivida
     {
     }
 }

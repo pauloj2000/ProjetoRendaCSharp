@@ -3,3 +3,4 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Infraestrutura\bi
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Infraestrutura\obj\Debug\Renda.Infraestrutura.csproj.CoreCompileInputs.cache
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Infraestrutura\obj\Debug\Renda.Infraestrutura.dll
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Infraestrutura\obj\Debug\Renda.Infraestrutura.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Infraestrutura\obj\Debug\Renda.Infraestrutura.csprojResolveAssemblyReference.cache

@@ -19,3 +19,9 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Re
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmRendaMensal.resources
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmSenha.resources
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmUsuario.resources
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Negocio.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Negocio.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Repositorio.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Persistencia.XML.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Repositorio.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Persistencia.XML.pdb

@@ -14,6 +14,10 @@ namespace Renda.Repositorio.Repositorios.Contratos
 
         UsuarioObj ObtenhaUsuarioPorId(int id);
 
+        UsuarioObj ObtenhaUsuarioPorLogin(string login);
+
+        UsuarioObj ObtenhaUsuarioPorEmail(string email);
+
         Boolean ExisteUsuarioComMesmoId(int id);
 
     }

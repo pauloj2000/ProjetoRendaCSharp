@@ -1,5 +1,6 @@
 ﻿using Renda.Infraestrutura.Contratos;
 using Renda.Infraestrutura.Enums;
+using Renda.Infraestrutura.Global;
 using Renda.Negocio.Dominio;
 using Renda.Persistencia.XML;
 using Renda.Repositorio.Repositorios.Contratos;
@@ -11,9 +12,9 @@ namespace Renda.Repositorio.Repositorios
     {
         private IPersistencia<UsuarioObj> _persistenciaUsuario;
 
-        public UsuarioRepositorio(EnumTipoPersistencia tipoPersistencia)
+        public UsuarioRepositorio()
         {
-            switch(tipoPersistencia)
+            switch(ConfigGeral.TipoPersistencia)
             {
                 case EnumTipoPersistencia.XML:
                     _persistenciaUsuario = new UsuarioXML();
@@ -50,6 +51,16 @@ namespace Renda.Repositorio.Repositorios
         {
             _persistenciaUsuario.Dispose();
             _persistenciaUsuario = null;
+        }
+
+        public UsuarioObj ObtenhaUsuarioPorLogin(string login)
+        {
+            throw new NotImplementedException();
+        }
+
+        public UsuarioObj ObtenhaUsuarioPorEmail(string email)
+        {
+            throw new NotImplementedException();
         }
     }
 }

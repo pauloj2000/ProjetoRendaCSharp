@@ -84,6 +84,32 @@ namespace Renda.Persistencia.XML
             return null;
         }
 
+        public UsuarioObj ObtenhaUsuarioPorEmail(string email)
+        {
+            foreach (UsuarioObj usuario in _listaUsuarios)
+            {
+                if (usuario.Email == email)
+                {
+                    return usuario;
+                }
+            }
+
+            return null;
+        }
+
+        public UsuarioObj ObtenhaUsuarioPorLogin(string login)
+        {
+            foreach (UsuarioObj usuario in _listaUsuarios)
+            {
+                if (usuario.Login == login)
+                {
+                    return usuario;
+                }
+            }
+
+            return null;
+        }
+
         public void Dispose()
         {
             Carregar();
