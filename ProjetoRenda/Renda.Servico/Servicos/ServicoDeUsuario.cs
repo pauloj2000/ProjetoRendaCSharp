@@ -1,8 +1,10 @@
 ﻿using Renda.Infraestrutura.Global;
+using Renda.Infraestrutura.Util;
 using Renda.Negocio.Dominio;
 using Renda.Negocio.Validacao;
 using Renda.Repositorio.Repositorios;
 using Renda.Servico.Contratos;
+using Renda.Servico.Validacao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,24 +15,53 @@ namespace Renda.Servico.Servicos
 {
     public class ServicoDeUsuario : IServicoDeUsuario
     {
-        public void Cadastrar(UsuarioObj usuario)
+        public UsuarioObj Cadastrar(UsuarioObj usuario)
         {
-            var resultadoValidacao = new ValidadorUsuario().Valide(usuario);
-
-            if (resultadoValidacao.Sucesso)
+            try
             {
-                using (var repUsuario = new UsuarioRepositorio())
+                usuario = new ValidadorUsuario().Valide(usuario);
+
+                if (usuario.ResultadoValidacao.Sucesso)
                 {
-                    repUsuario.InsiraUsuario(usuario);
+                    using (var repUsuario = new UsuarioRepositorio())
+                    {
+                        repUsuario.InsiraUsuario(usuario);
+                    }
                 }
-            } else {
-                throw resultadoValidacao;
+
+                return usuario;
+
+            } catch (Exception e)
+            {
+                throw e;
             }
         }
 
-        public bool ConfirmarLogin(string loginOuEmail, string senha)
+        public UsuarioObj ConfirmarLogin(string loginOuEmail, string senha)
         {
-            throw new NotImplementedException();
+            var validacoesLogin = new ValidacoesLogin();
+
+            try
+            {
+                using (var repUsuario = new UsuarioRepositorio())
+                {
+                    var usuario = repUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
+
+                    if (usuario.Equals(null))
+                    {
+                        usuario = repUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
+                    }
+
+                    usuario = validacoesLogin.ValideLoginEmailCorreto(usuario);
+
+                    usuario = validacoesLogin.ValideSenhaCorreta(usuario, senha);
+
+                    return usuario;
+                }
+            } catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void Dispose()
@@ -38,11 +69,23 @@ namespace Renda.Servico.Servicos
             throw new NotImplementedException();
         }
 
-        public void ExcluirConta(UsuarioObj usuario)
+        public UsuarioObj ExcluirConta(UsuarioObj usuario)
         {
-            using (var repUsuario = new UsuarioRepositorio())
+            var validacoesUsuario = new ValidacoesUsuario();
+
+            try
             {
-                repUsuario.RemovaUsuario(usuario.Id);
+                validacoesUsuario.ValidaExclusaoContaLogada(usuario);
+
+                using (var repUsuario = new UsuarioRepositorio())
+                {
+                    repUsuario.RemovaUsuario(usuario.Id);
+                }
+                return usuario;
+
+            } catch (Exception e)
+            {
+                throw e;
             }
         }
 
@@ -60,9 +103,11 @@ namespace Renda.Servico.Servicos
             }
         }
 
-        public void Logar(string loginOuEmail)
+        public bool Logar(string loginOuEmail)
         {
-            throw new NotImplementedException();
+            ConfigGeral.
+
+
         }
     }
 }

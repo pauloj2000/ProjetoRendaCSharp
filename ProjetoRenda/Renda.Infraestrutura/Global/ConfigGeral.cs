@@ -15,6 +15,13 @@ namespace Renda.Infraestrutura.Global
         {
             TipoPersistencia = tipoPersistencia;
         }
+
+        public static string UsuarioLogado { get; private set; }
+
+        public static void LogueUsuario(string usuarioOuEmail)
+        {
+            UsuarioLogado = usuarioOuEmail;
+        }
     }
 
 }

@@ -16,7 +16,7 @@ namespace Renda.Negocio.Validacao
 
         private ResultadoValidacao ApliqueRegrasValidacao(UsuarioObj usuario)
         {
-            _resultadoValidacao.ObtenhaInstancia();
+            _resultadoValidacao = new ResultadoValidacao();
 
             if (usuario.Login == null)
             {
@@ -69,16 +69,20 @@ namespace Renda.Negocio.Validacao
 
         private ValidadorUsuario _instancia;
 
-        public ResultadoValidacao Valide(UsuarioObj usuario)
+        public UsuarioObj Valide(UsuarioObj usuario)
         {
             if(_instancia == null)
             {
                 _instancia = new ValidadorUsuario();
             }
 
+            _resultadoValidacao = new ResultadoValidacao();
+
             _instancia.ApliqueRegrasValidacao(usuario);
 
-            return _resultadoValidacao;
+            usuario.ResultadoValidacao = _resultadoValidacao;
+
+            return usuario;
         }
 
         private string ConstruaMensagem(string mensagem, string nomeDoCampo, params object[] args)

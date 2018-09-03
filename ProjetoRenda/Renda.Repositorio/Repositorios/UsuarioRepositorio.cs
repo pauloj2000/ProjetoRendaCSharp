@@ -3,6 +3,7 @@ using Renda.Infraestrutura.Enums;
 using Renda.Infraestrutura.Global;
 using Renda.Negocio.Dominio;
 using Renda.Persistencia.XML;
+using Renda.Persistencia.XML.Contratos;
 using Renda.Repositorio.Repositorios.Contratos;
 using System;
 
@@ -10,7 +11,7 @@ namespace Renda.Repositorio.Repositorios
 {
     public class UsuarioRepositorio : IRepositorioUsuario
     {
-        private IPersistencia<UsuarioObj> _persistenciaUsuario;
+        private IPersistenciaUsuario _persistenciaUsuario;
 
         public UsuarioRepositorio()
         {
@@ -55,12 +56,12 @@ namespace Renda.Repositorio.Repositorios
 
         public UsuarioObj ObtenhaUsuarioPorLogin(string login)
         {
-            throw new NotImplementedException();
+           return _persistenciaUsuario.ObtenhaUsuarioPorLogin(login);
         }
 
         public UsuarioObj ObtenhaUsuarioPorEmail(string email)
         {
-            throw new NotImplementedException();
+            return _persistenciaUsuario.ObtenhaUsuarioPorEmail(email);
         }
     }
 }

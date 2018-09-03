@@ -4,11 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Renda.Infraestrutura.Contratos;
+using Renda.Infraestrutura.Util;
 
 namespace Renda.Negocio.Dominio
 {
     public class UsuarioObj  
     {
+        public UsuarioObj()
+        {
+        }
+
+        public UsuarioObj(ResultadoValidacao resultadoValidacao)
+        {
+            ResultadoValidacao = resultadoValidacao;
+        }
+
         public int Id { get; set; }
 
         public string Login { get; set; }
@@ -20,6 +30,8 @@ namespace Renda.Negocio.Dominio
         public string Email { get; set; }
 
         public DateTime MesAtual { get; set; }
+
+        public ResultadoValidacao ResultadoValidacao { get; set; }
 
     }
 }

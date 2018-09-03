@@ -1,5 +1,6 @@
 ﻿using Renda.Infraestrutura.Contratos;
 using Renda.Negocio.Dominio;
+using Renda.Persistencia.XML.Contratos;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace Renda.Persistencia.XML
 {
-    public class UsuarioXML : IPersistencia<UsuarioObj>
+    public class UsuarioXML : IPersistenciaUsuario
     {
         public UsuarioXML()
         {

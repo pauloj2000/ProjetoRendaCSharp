@@ -1,4 +1,5 @@
-﻿using Renda.Negocio.Dominio;
+﻿using Renda.Infraestrutura.Util;
+using Renda.Negocio.Dominio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,14 @@ namespace Renda.Servico.Contratos
 {
     public interface IServicoDeUsuario : IDisposable
     {
-        Boolean ExisteUsuarioOuEmail(string loginOuEmail);
+        UsuarioObj ExisteUsuarioOuEmail(string loginOuEmail);
 
-        Boolean ConfirmarLogin(string loginOuEmail, string senha);
+        UsuarioObj ConfirmarLogin(string loginOuEmail, string senha);
 
-        void Logar(string loginOuEmail);
+        UsuarioObj Logar(string loginOuEmail);
 
-        void Cadastrar(UsuarioObj usuario);
+        UsuarioObj Cadastrar(UsuarioObj usuario);
 
-        void ExcluirConta(UsuarioObj usuario);
+        UsuarioObj ExcluirConta(UsuarioObj usuario);
     }
 }
