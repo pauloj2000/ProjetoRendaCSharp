@@ -13,3 +13,15 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\obj\Debug
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\obj\Debug\Renda.Servico.pdb
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\Renda.Persistencia.XML.dll
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\Renda.Persistencia.XML.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\DevExpress.Data.v17.1.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\DevExpress.Xpo.v17.1.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\DevExpress.Data.v17.1.xml
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\DevExpress.Xpo.v17.1.xml
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Servico\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll

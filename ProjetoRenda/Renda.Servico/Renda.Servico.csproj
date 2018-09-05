@@ -45,6 +45,7 @@
     <Compile Include="Contratos\IServicoDeDividas.cs" />
     <Compile Include="Contratos\IServicoDeRenda.cs" />
     <Compile Include="Contratos\IServicoDeUsuario.cs" />
+    <Compile Include="Contratos\Validacao\IValidadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicos\ServicoDeUsuario.cs" />
     <Compile Include="Validacao\ValidacoesLogin.cs" />

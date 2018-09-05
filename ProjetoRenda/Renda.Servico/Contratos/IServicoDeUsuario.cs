@@ -10,14 +10,14 @@ namespace Renda.Servico.Contratos
 {
     public interface IServicoDeUsuario : IDisposable
     {
-        UsuarioObj ExisteUsuarioOuEmail(string loginOuEmail);
+        bool ExisteUsuarioOuEmail(string loginOuEmail);
 
-        UsuarioObj ConfirmarLogin(string loginOuEmail, string senha);
+        ResultadoValidacao ConfirmarLogin(string loginOuEmail, string senha);
 
-        UsuarioObj Logar(string loginOuEmail);
+        void Logar(string loginOuEmail);
 
-        UsuarioObj Cadastrar(UsuarioObj usuario);
+        ResultadoValidacao Cadastrar(UsuarioObj usuario);
 
-        UsuarioObj ExcluirConta(UsuarioObj usuario);
+        ResultadoValidacao ExcluirConta(UsuarioObj usuario);
     }
 }

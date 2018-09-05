@@ -1,4 +1,6 @@
-﻿using Renda.Infraestrutura.Global;
+﻿using Renda.Infraestrutura.Contratos.Validacao;
+using Renda.Infraestrutura.Global;
+using Renda.Infraestrutura.Util;
 using Renda.Negocio.Dominio;
 using System;
 using System.Collections.Generic;
@@ -10,14 +12,21 @@ namespace Renda.Servico.Validacao
 {
     public class ValidacoesUsuario
     {
-        public UsuarioObj ValidaExclusaoContaLogada(UsuarioObj usuario)
+        private ResultadoValidacao _resultadoValidacao;
+
+        public ValidacoesUsuario(ResultadoValidacao resultadoValidacao)
+        {
+            _resultadoValidacao = resultadoValidacao;
+        }
+
+        public ResultadoValidacao ValidaExclusaoContaLogada(UsuarioObj usuario)
         {
             if (usuario.Login == ConfigGeral.UsuarioLogado)
             {
-                usuario.ResultadoValidacao.AdicionaMensagemErro("Não é possível excluir a conta que se está logado");
+                _resultadoValidacao.AdicionaMensagemErro("Não é possível excluir a conta que se está logado");
             }
 
-            return usuario;
+            return _resultadoValidacao;
 
         }
     }

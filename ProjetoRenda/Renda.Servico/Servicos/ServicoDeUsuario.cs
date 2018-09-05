@@ -1,9 +1,13 @@
-﻿using Renda.Infraestrutura.Global;
+﻿using Renda.Infraestrutura.Contratos;
+using Renda.Infraestrutura.Contratos.Validacao;
+using Renda.Infraestrutura.Global;
 using Renda.Infraestrutura.Util;
 using Renda.Negocio.Dominio;
 using Renda.Negocio.Validacao;
 using Renda.Repositorio.Repositorios;
+using Renda.Repositorio.Repositorios.Contratos;
 using Renda.Servico.Contratos;
+using Renda.Servico.Contratos.Validacao;
 using Renda.Servico.Validacao;
 using System;
 using System.Collections.Generic;
@@ -15,21 +19,33 @@ namespace Renda.Servico.Servicos
 {
     public class ServicoDeUsuario : IServicoDeUsuario
     {
-        public UsuarioObj Cadastrar(UsuarioObj usuario)
+        public ServicoDeUsuario(IValidadorUsuario validador, IRepositorioUsuario repositorio)
+        {
+            _validadorUsuario = validador;
+            _repositorioUsuario = repositorio;
+            _resultadoValidacao = new ResultadoValidacao();
+        }
+
+        private IValidadorUsuario _validadorUsuario;
+
+        private IRepositorioUsuario _repositorioUsuario;
+
+        private ResultadoValidacao _resultadoValidacao;
+
+        public ResultadoValidacao Cadastrar(UsuarioObj usuario)
         {
             try
             {
-                usuario = new ValidadorUsuario().Valide(usuario);
+                _resultadoValidacao.LimpaErros();
 
-                if (usuario.ResultadoValidacao.Sucesso)
+                _resultadoValidacao = _validadorUsuario.Valide(usuario);
+
+                if (_resultadoValidacao.Sucesso)
                 {
-                    using (var repUsuario = new UsuarioRepositorio())
-                    {
-                        repUsuario.InsiraUsuario(usuario);
-                    }
+                        _repositorioUsuario.InsiraUsuario(usuario);
                 }
 
-                return usuario;
+                return _resultadoValidacao;
 
             } catch (Exception e)
             {
@@ -37,27 +53,26 @@ namespace Renda.Servico.Servicos
             }
         }
 
-        public UsuarioObj ConfirmarLogin(string loginOuEmail, string senha)
+        public ResultadoValidacao ConfirmarLogin(string loginOuEmail, string senha)
         {
-            var validacoesLogin = new ValidacoesLogin();
-
             try
             {
-                using (var repUsuario = new UsuarioRepositorio())
+                _resultadoValidacao.LimpaErros();
+
+                var validacoesLogin = new ValidacoesLogin(_resultadoValidacao);
+
+                var usuario = _repositorioUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
+
+                if (usuario.Equals(null))
                 {
-                    var usuario = repUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
-
-                    if (usuario.Equals(null))
-                    {
-                        usuario = repUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
-                    }
-
-                    usuario = validacoesLogin.ValideLoginEmailCorreto(usuario);
-
-                    usuario = validacoesLogin.ValideSenhaCorreta(usuario, senha);
-
-                    return usuario;
+                    usuario = _repositorioUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
                 }
+
+                _resultadoValidacao = validacoesLogin.ValideLoginEmailCorreto(usuario);
+                _resultadoValidacao = validacoesLogin.ValideSenhaCorreta(usuario, senha);
+
+                return _resultadoValidacao;
+
             } catch (Exception e)
             {
                 throw e;
@@ -66,22 +81,28 @@ namespace Renda.Servico.Servicos
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _repositorioUsuario.Dispose();
+            _repositorioUsuario = null;
+            _validadorUsuario = null;
+            _resultadoValidacao = null;
         }
 
-        public UsuarioObj ExcluirConta(UsuarioObj usuario)
+        public ResultadoValidacao ExcluirConta(UsuarioObj usuario)
         {
-            var validacoesUsuario = new ValidacoesUsuario();
+            _resultadoValidacao.LimpaErros();
+
+            var validacoesUsuario = new ValidacoesUsuario(_resultadoValidacao);
 
             try
             {
-                validacoesUsuario.ValidaExclusaoContaLogada(usuario);
+                _resultadoValidacao = validacoesUsuario.ValidaExclusaoContaLogada(usuario);
 
-                using (var repUsuario = new UsuarioRepositorio())
+                if (!_resultadoValidacao.Sucesso)
                 {
-                    repUsuario.RemovaUsuario(usuario.Id);
+                    _repositorioUsuario.RemovaUsuario(usuario.Id);
                 }
-                return usuario;
+
+                return _resultadoValidacao;
 
             } catch (Exception e)
             {
@@ -91,23 +112,19 @@ namespace Renda.Servico.Servicos
 
         public bool ExisteUsuarioOuEmail(string loginOuEmail)
         {
-            using (var repUsuario = new UsuarioRepositorio())
-            {
-                var usuario = repUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
+                var usuario = _repositorioUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
+
                 if (usuario.Equals(null))
                 {
-                    usuario = repUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
+                    usuario = _repositorioUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
                 }
 
                 return usuario != null;
-            }
         }
 
-        public bool Logar(string loginOuEmail)
+        public void Logar(string loginOuEmail)
         {
-            ConfigGeral.
-
-
+            ConfigGeral.LogueUsuario(loginOuEmail);
         }
     }
 }

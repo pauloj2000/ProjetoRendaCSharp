@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Contratos\Persistencia\IPersistencia.cs" />
     <Compile Include="Contratos\Repositorios\IRepositorio.cs" />
+    <Compile Include="Contratos\Validacao\IValidador.cs" />
     <Compile Include="Enums\EnumTipoPersistencia.cs" />
     <Compile Include="Global\ConfigGeral.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

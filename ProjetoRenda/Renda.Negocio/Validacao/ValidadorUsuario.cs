@@ -1,4 +1,5 @@
-﻿using Renda.Infraestrutura.Util;
+﻿using Renda.Infraestrutura.Contratos.Validacao;
+using Renda.Infraestrutura.Util;
 using Renda.Negocio.Dominio;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Renda.Negocio.Validacao
 {
-    public class ValidadorUsuario
+    public class ValidadorUsuario : IValidador<UsuarioObj>
     {
         private const string MENSAGEM_CAMPO_OBRIGATORIO = "O campo {0} é de preenchimento obrigatório.";
 
@@ -69,7 +70,7 @@ namespace Renda.Negocio.Validacao
 
         private ValidadorUsuario _instancia;
 
-        public UsuarioObj Valide(UsuarioObj usuario)
+        public ResultadoValidacao Valide(UsuarioObj usuario)
         {
             if(_instancia == null)
             {
@@ -78,11 +79,7 @@ namespace Renda.Negocio.Validacao
 
             _resultadoValidacao = new ResultadoValidacao();
 
-            _instancia.ApliqueRegrasValidacao(usuario);
-
-            usuario.ResultadoValidacao = _resultadoValidacao;
-
-            return usuario;
+            return _instancia.ApliqueRegrasValidacao(usuario);
         }
 
         private string ConstruaMensagem(string mensagem, string nomeDoCampo, params object[] args)

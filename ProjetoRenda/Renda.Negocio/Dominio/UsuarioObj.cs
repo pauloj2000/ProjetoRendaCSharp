@@ -14,11 +14,6 @@ namespace Renda.Negocio.Dominio
         {
         }
 
-        public UsuarioObj(ResultadoValidacao resultadoValidacao)
-        {
-            ResultadoValidacao = resultadoValidacao;
-        }
-
         public int Id { get; set; }
 
         public string Login { get; set; }
@@ -30,8 +25,6 @@ namespace Renda.Negocio.Dominio
         public string Email { get; set; }
 
         public DateTime MesAtual { get; set; }
-
-        public ResultadoValidacao ResultadoValidacao { get; set; }
 
     }
 }

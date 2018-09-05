@@ -1,4 +1,5 @@
 ﻿
+using Renda.Infraestrutura.Contratos.Validacao;
 using Renda.Infraestrutura.Util;
 using Renda.Negocio.Dominio;
 
@@ -6,28 +7,30 @@ namespace Renda.Servico.Validacao
 {
     public class ValidacoesLogin
     {
-        public UsuarioObj ValideLoginEmailCorreto(UsuarioObj usuario)
+        private ResultadoValidacao _resultadoValidacao;
+        public ValidacoesLogin(ResultadoValidacao resultadoValidacao)
+        {
+            _resultadoValidacao = resultadoValidacao;
+        }
+
+        public ResultadoValidacao ValideLoginEmailCorreto(UsuarioObj usuario)
         {
             if (usuario.Equals(null))
             {
-                usuario.ResultadoValidacao.AdicionaMensagemErro("O login/e-mail informado está incorreto.");
+                _resultadoValidacao.AdicionaMensagemErro("O login/e-mail informado está incorreto.");
             }
 
-            return usuario;
-
+            return _resultadoValidacao;
         }
 
-        public UsuarioObj ValideSenhaCorreta(UsuarioObj usuario, string senhaInformada)
-        { 
+        public ResultadoValidacao ValideSenhaCorreta(UsuarioObj usuario, string senhaInformada)
+        {
             if (usuario.Senha != senhaInformada)
             {
-                usuario.ResultadoValidacao.AdicionaMensagemErro("A senha está incorreta.");
+                _resultadoValidacao.AdicionaMensagemErro("A senha está incorreta.");
             }
 
-            return usuario;
+            return _resultadoValidacao;
         }
-
-        public UsuarioObj Valide
-}
-
+    }
 }
