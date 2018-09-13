@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
+            this.lblEsqueci = new System.Windows.Forms.Label();
+            this.lblCadastrar = new System.Windows.Forms.Label();
+            this.btnLogar = new System.Windows.Forms.Button();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnLogar = new System.Windows.Forms.Button();
-            this.lblCadastrar = new System.Windows.Forms.Label();
-            this.lblEsqueci = new System.Windows.Forms.Label();
             this.groupBoxLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,36 @@
             this.groupBoxLogin.Size = new System.Drawing.Size(196, 182);
             this.groupBoxLogin.TabIndex = 0;
             this.groupBoxLogin.TabStop = false;
+            // 
+            // lblEsqueci
+            // 
+            this.lblEsqueci.AutoSize = true;
+            this.lblEsqueci.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblEsqueci.Location = new System.Drawing.Point(36, 156);
+            this.lblEsqueci.Name = "lblEsqueci";
+            this.lblEsqueci.Size = new System.Drawing.Size(117, 13);
+            this.lblEsqueci.TabIndex = 7;
+            this.lblEsqueci.Text = "Esqueci minha senha...";
+            // 
+            // lblCadastrar
+            // 
+            this.lblCadastrar.AutoSize = true;
+            this.lblCadastrar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblCadastrar.Location = new System.Drawing.Point(25, 133);
+            this.lblCadastrar.Name = "lblCadastrar";
+            this.lblCadastrar.Size = new System.Drawing.Size(145, 13);
+            this.lblCadastrar.TabIndex = 6;
+            this.lblCadastrar.Text = "Ainda não possuo cadastro...";
+            // 
+            // btnLogar
+            // 
+            this.btnLogar.Location = new System.Drawing.Point(57, 97);
+            this.btnLogar.Name = "btnLogar";
+            this.btnLogar.Size = new System.Drawing.Size(83, 23);
+            this.btnLogar.TabIndex = 5;
+            this.btnLogar.Text = "Realizar login";
+            this.btnLogar.UseVisualStyleBackColor = true;
+            this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 
             // lblSenha
             // 
@@ -85,35 +115,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(142, 20);
             this.textBox1.TabIndex = 1;
-            // 
-            // btnLogar
-            // 
-            this.btnLogar.Location = new System.Drawing.Point(57, 97);
-            this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(83, 23);
-            this.btnLogar.TabIndex = 5;
-            this.btnLogar.Text = "Realizar login";
-            this.btnLogar.UseVisualStyleBackColor = true;
-            // 
-            // lblCadastrar
-            // 
-            this.lblCadastrar.AutoSize = true;
-            this.lblCadastrar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblCadastrar.Location = new System.Drawing.Point(25, 133);
-            this.lblCadastrar.Name = "lblCadastrar";
-            this.lblCadastrar.Size = new System.Drawing.Size(145, 13);
-            this.lblCadastrar.TabIndex = 6;
-            this.lblCadastrar.Text = "Ainda não possuo cadastro...";
-            // 
-            // lblEsqueci
-            // 
-            this.lblEsqueci.AutoSize = true;
-            this.lblEsqueci.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblEsqueci.Location = new System.Drawing.Point(36, 156);
-            this.lblEsqueci.Name = "lblEsqueci";
-            this.lblEsqueci.Size = new System.Drawing.Size(117, 13);
-            this.lblEsqueci.TabIndex = 7;
-            this.lblEsqueci.Text = "Esqueci minha senha...";
             // 
             // frmLogin
             // 

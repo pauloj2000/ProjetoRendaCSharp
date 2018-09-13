@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Renda.Negocio.Validacao
 {
-    public class ValidadorUsuario : IValidador<UsuarioObj>
+    public class ValidadorUsuario : IValidadorUsuario
     {
         private const string MENSAGEM_CAMPO_OBRIGATORIO = "O campo {0} é de preenchimento obrigatório.";
 

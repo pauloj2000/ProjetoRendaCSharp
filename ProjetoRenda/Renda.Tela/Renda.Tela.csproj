@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositorioUsuario.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <EmbeddedResource Include="frmCadastrar.resx">
       <DependentUpon>frmCadastrar.cs</DependentUpon>

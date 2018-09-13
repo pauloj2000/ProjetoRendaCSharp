@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Renda.Servico.Contratos.Validacao
+namespace Renda.Negocio.Validacao
 {
     public interface IValidadorUsuario : IValidador<UsuarioObj>
     {
