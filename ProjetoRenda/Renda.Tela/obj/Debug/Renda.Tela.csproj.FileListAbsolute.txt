@@ -25,3 +25,4 @@ C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Re
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Persistencia.XML.dll
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Repositorio.pdb
 C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\bin\Debug\Renda.Persistencia.XML.pdb
+C:\Users\paulo.rodrigues\ProjetoRendaCSharp\ProjetoRenda\Renda.Tela\obj\Debug\Renda.Tela.frmExcecao.resources

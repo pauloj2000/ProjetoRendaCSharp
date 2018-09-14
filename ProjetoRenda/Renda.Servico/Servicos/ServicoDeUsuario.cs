@@ -7,7 +7,6 @@ using Renda.Negocio.Validacao;
 using Renda.Repositorio.Repositorios;
 using Renda.Repositorio.Repositorios.Contratos;
 using Renda.Servico.Contratos;
-using Renda.Servico.Contratos.Validacao;
 using Renda.Servico.Validacao;
 using System;
 using System.Collections.Generic;

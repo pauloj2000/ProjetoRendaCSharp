@@ -34,8 +34,8 @@
             this.btnLogar = new System.Windows.Forms.Button();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbSenha = new System.Windows.Forms.TextBox();
+            this.txbUsuario = new System.Windows.Forms.TextBox();
             this.groupBoxLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,8 +46,8 @@
             this.groupBoxLogin.Controls.Add(this.btnLogar);
             this.groupBoxLogin.Controls.Add(this.lblSenha);
             this.groupBoxLogin.Controls.Add(this.lblUsuario);
-            this.groupBoxLogin.Controls.Add(this.textBox2);
-            this.groupBoxLogin.Controls.Add(this.textBox1);
+            this.groupBoxLogin.Controls.Add(this.txbSenha);
+            this.groupBoxLogin.Controls.Add(this.txbUsuario);
             this.groupBoxLogin.Location = new System.Drawing.Point(5, 0);
             this.groupBoxLogin.Name = "groupBoxLogin";
             this.groupBoxLogin.Size = new System.Drawing.Size(196, 182);
@@ -102,19 +102,19 @@
             this.lblUsuario.TabIndex = 3;
             this.lblUsuario.Text = "Usuário/E-mail";
             // 
-            // textBox2
+            // txbSenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(57, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(83, 20);
-            this.textBox2.TabIndex = 2;
+            this.txbSenha.Location = new System.Drawing.Point(57, 71);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.Size = new System.Drawing.Size(83, 20);
+            this.txbSenha.TabIndex = 2;
             // 
-            // textBox1
+            // txbUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 20);
-            this.textBox1.TabIndex = 1;
+            this.txbUsuario.Location = new System.Drawing.Point(28, 32);
+            this.txbUsuario.Name = "txbUsuario";
+            this.txbUsuario.Size = new System.Drawing.Size(142, 20);
+            this.txbUsuario.TabIndex = 1;
             // 
             // frmLogin
             // 
@@ -133,8 +133,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxLogin;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbSenha;
+        private System.Windows.Forms.TextBox txbUsuario;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblEsqueci;

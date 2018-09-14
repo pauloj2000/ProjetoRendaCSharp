@@ -1,5 +1,4 @@
 ﻿using Renda.Infraestrutura.Util;
-using Renda.Negocio.Validacao;
 using Renda.Servico.Servicos;
 using Renda.Servico.Validacao;
 using Renda.Tela.ViewModels;
@@ -17,17 +16,27 @@ namespace Renda.Tela
 {
     public partial class frmLogin : Form
     {
-        private LoginViewModel _loginViewModel;
+        public string Usuario;
+
+        public string Senha;
+
+        private ControladorLogin _controladorLogin;
 
         public frmLogin()
         {
             InitializeComponent();
-            ///_loginViewModel = new LoginViewModel(new ServicoDeUsuario(new ValidadorUsuario(), new RepositorioUsuario()));
+            _controladorLogin = new ControladorLogin(this);
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
+            _controladorLogin.LogueUsuario();
+        }
 
+        public void CarregueDadosTela()
+        {
+            Usuario = txbUsuario.Text;
+            Senha = txbSenha.Text;
         }
     }
 }

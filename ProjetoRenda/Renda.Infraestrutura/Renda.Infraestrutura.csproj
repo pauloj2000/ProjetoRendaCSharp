@@ -46,6 +46,7 @@
     <Compile Include="Enums\EnumTipoPersistencia.cs" />
     <Compile Include="Global\ConfigGeral.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\MyException.cs" />
     <Compile Include="Util\ResultadoValidacao.cs" />
     <Compile Include="Util\Util.cs" />
   </ItemGroup>
