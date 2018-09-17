@@ -30,7 +30,10 @@ namespace Renda.Tela
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            _controladorLogin.LogueUsuario();
+            if (_controladorLogin.LogueUsuario())
+            {
+                new FrmPrincipal();
+            } 
         }
 
         public void CarregueDadosTela()
