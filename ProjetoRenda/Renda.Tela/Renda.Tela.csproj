@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewModels\ControladorCadastro.cs" />
     <Compile Include="frmCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +157,10 @@
     <ProjectReference Include="..\Renda.Infraestrutura\Renda.Infraestrutura.csproj">
       <Project>{e981e0a8-c3dd-465e-b735-3291b531e3f5}</Project>
       <Name>Renda.Infraestrutura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renda.Negocio\Renda.Negocio.csproj">
+      <Project>{F8631840-8B3A-48D6-95D3-1B47460F6C1A}</Project>
+      <Name>Renda.Negocio</Name>
     </ProjectReference>
     <ProjectReference Include="..\Renda.Servico\Renda.Servico.csproj">
       <Project>{0f918a20-cdc2-4f1c-b80f-8a1e18e07ffd}</Project>

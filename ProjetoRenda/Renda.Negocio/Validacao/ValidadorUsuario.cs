@@ -39,10 +39,10 @@ namespace Renda.Negocio.Validacao
                 _resultadoValidacao.AdicionaMensagemErro(ConstruaMensagem(MENSAGEM_CAMPO_OBRIGATORIO, "Email"));
             }
 
-            if (usuario.MesAtual == null)
-            {
-                _resultadoValidacao.AdicionaMensagemErro(ConstruaMensagem(MENSAGEM_CAMPO_OBRIGATORIO, "MesAtual"));
-            }
+            //if (usuario.MesAtual == null)
+            //{
+            //    _resultadoValidacao.AdicionaMensagemErro(ConstruaMensagem(MENSAGEM_CAMPO_OBRIGATORIO, "MesAtual"));
+            //}
 
             if (usuario.Login.Length < 6 || usuario.Login.Length > 30)
             {

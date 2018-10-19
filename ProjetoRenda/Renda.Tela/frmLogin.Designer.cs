@@ -73,6 +73,7 @@
             this.lblCadastrar.Size = new System.Drawing.Size(145, 13);
             this.lblCadastrar.TabIndex = 6;
             this.lblCadastrar.Text = "Ainda não possuo cadastro...";
+            this.lblCadastrar.Click += new System.EventHandler(this.lblCadastrar_Click);
             // 
             // btnLogar
             // 

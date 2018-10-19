@@ -62,15 +62,20 @@ namespace Renda.Servico.Servicos
 
                 var usuario = _repositorioUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
 
-                if (usuario.Equals(null))
+                if (usuario == null)
                 {
                     usuario = _repositorioUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
                 }
 
-                _resultadoValidacao = validacoesLogin.ValideLoginEmailCorreto(usuario);
-                _resultadoValidacao = validacoesLogin.ValideSenhaCorreta(usuario, senha);
+                if (usuario == null)
+                {
+                    validacoesLogin.AdicioneMensagemUsuarioIncorreto();
+                    return validacoesLogin.ObtenhaResultado();
+                }
 
-                return _resultadoValidacao;
+                validacoesLogin.ValideSenhaCorreta(usuario, senha);
+
+                return validacoesLogin.ObtenhaResultado(); ;
 
             } catch (Exception e)
             {
@@ -113,7 +118,7 @@ namespace Renda.Servico.Servicos
         {
                 var usuario = _repositorioUsuario.ObtenhaUsuarioPorLogin(loginOuEmail);
 
-                if (usuario.Equals(null))
+                if (usuario == null)
                 {
                     usuario = _repositorioUsuario.ObtenhaUsuarioPorEmail(loginOuEmail);
                 }

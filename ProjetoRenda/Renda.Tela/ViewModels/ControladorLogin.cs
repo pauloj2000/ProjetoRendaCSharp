@@ -30,14 +30,19 @@ namespace Renda.Tela.ViewModels
                 if (_resultadoServico.Sucesso)
                 {
                     return true;
+                } else
+                {
+                    new frmValidacoes(_resultadoServico).MostreInconsistencias();
                 }
+
             } catch (MyException e)
             {
                 new frmExcecao(e).TrateExcecao();
-            }
 
-            new frmValidacoes(_resultadoServico).MostreInconsistencias();
+            }
             return false;
         }
+
+
     }
 }

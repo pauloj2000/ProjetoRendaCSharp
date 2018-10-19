@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Renda.Infraestrutura.Enums;
+using Renda.Infraestrutura.Global;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +18,7 @@ namespace Renda.Tela
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            ConfigGeral.DefinaPersistenciaDados(EnumTipoPersistencia.XML);
             Application.Run(new frmLogin());
         }
     }

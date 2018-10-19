@@ -23,7 +23,7 @@ namespace Renda.Tela
 
         public void MostreInconsistencias()
         {
-
+            listBoxInconsistencias.Text = _resultadoValidacao.ObtenhaErros(); 
         }
     }
 }

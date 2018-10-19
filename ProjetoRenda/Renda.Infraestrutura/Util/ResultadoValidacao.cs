@@ -8,6 +8,8 @@ namespace Renda.Infraestrutura.Util
 {
     public class ResultadoValidacao 
     {
+        private const string MENSAGEM_PADRAO_VALIDACAO = "As seguintes inconsistências foram encontradas:";
+
         public ResultadoValidacao()
         {
             _listaErros = new List<string>();
@@ -28,6 +30,19 @@ namespace Renda.Infraestrutura.Util
         {
             _listaErros.Clear();
             Sucesso = true;
+        }
+
+        public string ObtenhaErros()
+        {
+            string mensagemErro;
+
+            mensagemErro = "";
+            _listaErros.ForEach(x =>
+           {
+               mensagemErro = Environment.NewLine + x + mensagemErro;
+           });
+
+            return MENSAGEM_PADRAO_VALIDACAO + mensagemErro;
         }
     }
 }

@@ -13,23 +13,21 @@ namespace Renda.Servico.Validacao
             _resultadoValidacao = resultadoValidacao;
         }
 
-        public ResultadoValidacao ValideLoginEmailCorreto(UsuarioObj usuario)
+        public void AdicioneMensagemUsuarioIncorreto()
         {
-            if (usuario.Equals(null))
-            {
-                _resultadoValidacao.AdicionaMensagemErro("O login/e-mail informado está incorreto.");
-            }
-
-            return _resultadoValidacao;
+            _resultadoValidacao.AdicionaMensagemErro("O login/e-mail informado está incorreto.");
         }
 
-        public ResultadoValidacao ValideSenhaCorreta(UsuarioObj usuario, string senhaInformada)
+        public void ValideSenhaCorreta(UsuarioObj usuario, string senhaInformada)
         {
             if (usuario.Senha != senhaInformada)
             {
                 _resultadoValidacao.AdicionaMensagemErro("A senha está incorreta.");
             }
+        }
 
+        public ResultadoValidacao ObtenhaResultado()
+        {
             return _resultadoValidacao;
         }
     }

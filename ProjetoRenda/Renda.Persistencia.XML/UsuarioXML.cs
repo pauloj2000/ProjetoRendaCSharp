@@ -26,7 +26,7 @@ namespace Renda.Persistencia.XML
         private void Carregar()
         {
             XmlSerializer ser = new XmlSerializer(typeof(List<UsuarioObj>));
-            FileStream fs = new FileStream("D://Usuarios.xml", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("C://Usuarios.xml", FileMode.OpenOrCreate);
 
             try
             {

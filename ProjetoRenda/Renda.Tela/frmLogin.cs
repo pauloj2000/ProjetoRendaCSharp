@@ -32,7 +32,9 @@ namespace Renda.Tela
         {
             if (_controladorLogin.LogueUsuario())
             {
-                new FrmPrincipal();
+                FrmPrincipal frmPrincipal = new FrmPrincipal();
+                frmPrincipal.Show();
+                Close();
             } 
         }
 
@@ -40,6 +42,13 @@ namespace Renda.Tela
         {
             Usuario = txbUsuario.Text;
             Senha = txbSenha.Text;
+        }
+
+        private void lblCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastrar frm = new frmCadastrar();
+            frm.Show();
+            Close();
         }
     }
 }
